@@ -72,7 +72,7 @@ int main()
         }
         vector<ll> dp(k+1);
         for(int k1=0;k1<=k;k1++){
-            for(i=0;i<n;i++){
+            for(i=0;i<n;i++){ // tutorial: https://www.youtube.com/watch?v=lqL52qyoPlQ&t=1630s
                 if(k1>=move[i] and dp[k1-move[i]]==0){
                     dp[k1]=1;
                 }
